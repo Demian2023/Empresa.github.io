@@ -1,0 +1,53 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-image: url("/imagenes/fondo\ ciudad.jpg");
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contenedor {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+}
+
+.box {
+    font-family: 'Roboto', 'Arial';
+    font-style: italic;
+    color: white;
+}
+
+img {
+    height: 70px;
+}
+
+.resto {
+    height: 10px;
+    background-color: azure;
+}
+
+.cuerpoPagina {
+    height: 1000px;
+    background-color: blue;
+}
+
+.FX {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.FX.active {
+    transform: translateY(600px);
+    opacity: 0;
+    transition: 2s all ease;
+}
