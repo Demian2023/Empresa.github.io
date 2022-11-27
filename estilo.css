@@ -5,7 +5,7 @@ html {
 }
 
 .bg {
-    background-image: url("imagenes/fondo\ ciudad.jpg");
+    background-image: url("/imagenes/fondo\ ciudad.jpg");
     height: 100%;
     background-position: top;
     background-repeat: no-repeat;
@@ -31,14 +31,21 @@ img {
     height: 70px;
 }
 
+.boxcontacto {
+    display: block;
+    text-align: right;
+}
+
 .resto {
-    height: 10px;
-    background-color: azure;
+    height: fit-content;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
 .cuerpoPagina {
     height: 1000px;
-    background-color: blue;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
 .FX {
@@ -47,7 +54,7 @@ img {
 }
 
 .FX.active {
-    transform: translateY(600px);
+    transform: translateY(110vh);
     opacity: 0;
-    transition: 1s all ease;
+    transition: 2s all ease;
 }
