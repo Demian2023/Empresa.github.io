@@ -27,13 +27,19 @@ html {
     color: white;
 }
 
-img {
+
+.box {
+    color: white;
+}
+
+.logo {
     height: 70px;
 }
 
 .boxcontacto {
-    display: block;
-    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 .resto {
@@ -48,19 +54,18 @@ img {
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
 
-.item {
-    width: 30vw;
-    margin: 1vw;
-}
-
-.imagen {
-    height: 30vh;
-    padding: 1vw;
-    object-fit: scale-down;
+.fondoImagen {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
 }
