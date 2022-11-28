@@ -2,6 +2,8 @@ body,
 html {
     height: 100%;
     margin: 0;
+    font-family: 'Roboto', 'Arial';
+    font-style: italic;
 }
 
 .bg {
@@ -22,8 +24,6 @@ html {
 }
 
 .box {
-    font-family: 'Roboto', 'Arial';
-    font-style: italic;
     color: white;
 }
 
@@ -43,18 +43,24 @@ img {
 }
 
 .cuerpoPagina {
-    height: 1000px;
+    height: fit-content;
     background-color: #0093E9;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
 
-.FX {
-    transform: translateY(0);
-    opacity: 1;
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.FX.active {
-    transform: translateY(110vh);
-    opacity: 0;
-    transition: 2s all ease;
+.item {
+    width: 30vw;
+    margin: 1vw;
+}
+
+.imagen {
+    height: 30vh;
+    padding: 1vw;
+    object-fit: scale-down;
 }
