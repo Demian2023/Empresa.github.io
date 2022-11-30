@@ -23,6 +23,34 @@ html {
     text-align: center;
 }
 
+.FX {
+    animation: fadeInAnimation ease-out 3s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: matrix3d( 0.839, 0, 0.545, 0, 0, 0.777, 0.629, 0, -0.545, -0.629, 0.652, 0, 0, 0, 0, 1)
+    }
+    100% {
+        opacity: 1;
+        transform: matrix3d( 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+}
+
+.FX2 {
+    animation: blurOut ease-out 2s;
+}
+
+@keyframes blurOut {
+    0% {
+        filter: blur(5px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+
 .box {
     color: white;
 }
